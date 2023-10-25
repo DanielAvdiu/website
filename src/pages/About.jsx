@@ -2,7 +2,7 @@ const About = () => {
     return ( 
         <div className="flex flex-row justify-center space-x-10 py-10 h-screen w-screen">
             <div className="">
-                <img src="src/assets/images/good.gif" alt="" />
+                <img src="public/assets/images/good.gif" alt="" />
             </div>
 
             <div className="flex flex-col justify-center">

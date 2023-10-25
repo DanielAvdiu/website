@@ -5,25 +5,25 @@ import { BrowserRouter, useNavigate } from "react-router-dom";
 const eyes = [
     {
         "id": 1,
-        "image": "src/assets/images/genetics1.jpg",
+        "image": "public/assets/images/genetics1.jpg",
         "description": "Learn about genetics",
         "navigate": "/learn"
     },
     {
         "id": 2,
-        "image": "src/assets/images/drawing1.jpg",
+        "image": "public/assets/images/drawing1.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "navigate": "/about"
     },
     {
         "id": 3,
-        "image": "src/assets/images/classic.jpg",
+        "image": "public/assets/images/classic.jpg",
         "description": "Share your story",
         "navigate": "/stories"
     },
     {
         "id": 4,
-        "image": "src/assets/images/question.jpeg",
+        "image": "public/assets/images/question.jpeg",
         "description": "What is this website about",
         "navigate": "/about"
     }
