@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
+import reactLogo from '../public/assets/react.svg';
 import { Navbar, Footer } from './components/';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { Home, About, Learn, Stories, Products, Motivation } from "./pages";
