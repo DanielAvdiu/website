@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Form } from "../components";
 import { Modal } from "../components";
 import { button } from "@material-tailwind/react";
-
+import {book_shelf, gifImage} from "../assets/";
 
 const stories = [
     {
@@ -135,7 +135,7 @@ const Stories = () => {
     return (
         <>
             {/* Banner Image and two buttons */}
-            <div className="flex justify-center bg-[url('public/assets/images/book_shelf.jpeg')] text-white flex-grow bg-no-repeat bg-fit bg-cover h-auto py-10 text-center text-3xl font-bold">
+            <div className="flex justify-center text-white flex-grow bg-no-repeat bg-fit bg-cover h-auto py-10 text-center text-3xl font-bold">
 
                 <div className="flex sm:flex-col flex-row">
                     <button id="story_list_button" className={buttonClass} onClick={handleClick_story_list}>
@@ -177,7 +177,7 @@ const Stories = () => {
                         <div id="story_title" className="font-mono text-3xl items-center">
                             Story Time
                             <div className="border-2 border-black">
-                                <img src="public/assets/images/gifImage.gif" alt="gif image" />
+                                <img src={gifImage} alt="gif image" />
                             </div>
 
                         </div>

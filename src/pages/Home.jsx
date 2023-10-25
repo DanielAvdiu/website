@@ -1,29 +1,29 @@
 import { Component } from "../components";
 import { BrowserRouter, useNavigate } from "react-router-dom";
-
+import { classic, genetics1, drawing1, question } from "../assets/";
 
 const eyes = [
     {
         "id": 1,
-        "image": "public/assets/images/genetics1.jpg",
+        "image": genetics1,
         "description": "Learn about genetics",
         "navigate": "/learn"
     },
     {
         "id": 2,
-        "image": "public/assets/images/drawing1.jpg",
+        "image": drawing1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "navigate": "/about"
     },
     {
         "id": 3,
-        "image": "public/assets/images/classic.jpg",
+        "image": classic,
         "description": "Share your story",
         "navigate": "/stories"
     },
     {
         "id": 4,
-        "image": "public/assets/images/question.jpeg",
+        "image": question,
         "description": "What is this website about",
         "navigate": "/about"
     }
