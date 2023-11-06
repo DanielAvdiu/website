@@ -32,6 +32,9 @@ export const Navbar = () => {
         <li>
           <NavLink to="/products">Products</NavLink>
         </li>
+        <li>
+          <NavLink to="/form">Add Story</NavLink>
+        </li>
       </ul>
     </nav>
   );

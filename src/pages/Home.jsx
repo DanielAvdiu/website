@@ -6,13 +6,13 @@ const eyes = [
     {
         "id": 1,
         "image": genetics1,
-        "description": "Learn about genetics",
+        "description": "Learn More With Educational Videos",
         "navigate": "/learn"
     },
     {
         "id": 2,
         "image": drawing1,
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "description": "Get Started",
         "navigate": "/about"
     },
     {
@@ -43,7 +43,7 @@ const Home = () => {
 
             <div className="bg-white text-black h-auto w-[99] flex-col justify-center text-2xl">
 
-                <div className={`py-4 text-4xl text-center border-solid border-indigo-600 border-8 w-screen`}>
+                <div className={`py-4 text-4xl text-center w-screen`}>
                     Welcome to RPHUB
 
                     <div className="text-2xl flex justify-center text-center">
@@ -52,7 +52,7 @@ const Home = () => {
 
                     <div className="sm:flex-col p-4 flex flex-row flex-wrap justify-center">
                         {eyes.map((eye) => (
-                            <div className="max-w-sm rounded overflow-hidden shadow-lg my-3 mx-2" key={eye.id} style={{ width: '300px' }}>
+                            <div className="max-w-sm rounded overflow-hidden shadow-lg my-3 mx-2 scrollbar-hide" key={eye.id} style={{ width: '300px' }}>
                                 <img src={eye.image} alt="eye drawing" style={{ width: '600px', height: '250px' }} className="cursor-pointer" onClick={() => handelClick(eye.navigate)} />
 
                                 <div className="px-6 py-4">
