@@ -59,7 +59,7 @@ const Stories = () => {
     }, []);
 
     return (
-        <>
+        <div className="scrollbar-hide">
             {/* Banner Image and two buttons */}
             <div className="flex justify-center text-white flex-grow bg-no-repeat bg-fit bg-cover h-auto py-10 text-center text-3xl font-bold">
 
@@ -119,7 +119,7 @@ const Stories = () => {
                 </div>
             </div>
 
-        </>
+        </div>
     );
 }
 
