@@ -1,14 +1,14 @@
 const Footer = () => {
     return (
         <>
-            <footer className="inset-x-0 bottom-0 w-full bg-black text-white flex flex-row space-x-4 py-2 justify-center items-center text-xl fixed bottom-0 left-0 bg-red-500 w-screen h-12">
+            <footer className="inset-x-0 bottom-0 w-full bg-black text-white flex flex-row space-x-4 py-2 justify-center items-center text-xl bottom-0 left-0 bg-red-500 w-screen h-12">
 
                 <div className="">
                     <img src="" alt="" />
                 </div>
 
-                <div className="px-20 py-4">
-                    <p>Educational Purpose Only</p>
+                <div className="px-20">
+                    <p></p>
                 </div>
 
             </footer>

@@ -1,18 +1,34 @@
 import { useState } from "react";
-import { Modal } from "../components";
-import { button } from "@material-tailwind/react";
-import { book_shelf, gifImage } from "../assets/";
+import { gifImage } from "../assets/";
 import { useEffect } from "react";
-
-const BASE_URL = "https://user-stories.onrender.com";
+import { db } from "../database/firebase-config";
+import { collection, getDocs } from "firebase/firestore";
 
 const Stories = () => {
 
     const buttonClass = "font-mono mx-10 inline-block rounded bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]";
     const [buttonName, setButtonName] = useState("Show Story List");
-    const [contentActive, setContentActive] = useState(false);
-    const [storyListActive, setStoryListActive] = useState(false);
+
     const [stories, setStories] = useState([]);
+
+    //database with firebase
+
+    const userCollectionsRef = collection(db, "stories");
+
+
+    useEffect(() => {
+        
+        const getStories = async () => {
+            const data =  await getDocs(userCollectionsRef);
+            const temp_stories=[];
+            console.log(data.docs.map(doc => ({ ...doc.data(), id: doc.id })));
+            data.docs.map(doc => temp_stories.push({ ...doc.data(), id: doc.id }));
+            console.log(temp_stories);
+            setStories(temp_stories);
+        }
+
+        getStories();
+    }, []);
 
     const handleClick_story_list = (e) => {
         e.preventDefault();
@@ -48,15 +64,6 @@ const Stories = () => {
         story_content.innerHTML = content;
     }
 
-    useEffect(() => {
-        const getStories = async () => {
-            const response = await fetch(`${BASE_URL}/stories`);
-            const data = await response.json();
-            setStories(data);
-            console.log(data);
-        }
-        getStories();
-    }, []);
 
     return (
         <div className="scrollbar-hide">
@@ -73,7 +80,7 @@ const Stories = () => {
             </div>
 
             {/* Middle section */}
-            <div className="flex flex-row flex-grow justify-center">
+            <div className="flex flex-row flex-grow justify-center h-screen">
 
                 <div id="left_section" className="hidden md:visible flex overflow-y-scroll scrollbar-hide">
 
@@ -81,13 +88,13 @@ const Stories = () => {
 
                         <div className="w-auto overflow flex flex-col">
                             {stories.map((story) => (
-                                <div key={story.id} className="cursor-pointer bg-slate-200 hover:bg-sky-500 hover:text-white hover:font-bold py-2 px-2 my-2" onClick={() => handle_item_click(story.title, story.content)}>
+                                <div key={story.id} className="cursor-pointer bg-slate-200 hover:bg-sky-500 hover:text-white hover:font-bold py-2 px-2 my-2" onClick={() => handle_item_click(story.title, story.story)}>
 
                                     <div className="font-mono">{story.title} | {story.author}</div>
                                     <div className="flex flex-row justify-center">
                                         <hr className="w-2/3 border-4" />
                                     </div>
-                                    <div className="font-mono">{story.summary}</div>
+                                    <div className="font-mono">{story.story}</div>
                                 </div>
                             ))}
                         </div>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Navbar, Footer } from './components/';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { Home, About, Learn, Stories, Products, Motivation, StoryForm } from "./pages";
+import { Home, About, Learn, Stories, Products, Motivation, StoryForm, Treatments } from "./pages";
 import './App.css';
 
 
@@ -13,9 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/stories" element={<Stories />} />
+        <Route path="/treatments" element={<Treatments />} />
         <Route path="/about" element={<About />} />
         <Route path="/learn" element={<Learn />} />
-        <Route path="/products" element={<Products />} />
         <Route path="/motivation" element={<Motivation />} />
         <Route path="/form" element={ <StoryForm /> } />
       </Routes>
