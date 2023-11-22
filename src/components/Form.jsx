@@ -96,17 +96,17 @@ const Form = () => {
 
                     <form className="" action="" method="">
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
-                            <input type="text" id="fname" onChange={(event)=>{setName(event.target.value)}} name="fname" placeholder="Name" className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700 " required />
+                            <input type="text" id="fname" onChange={(event)=>{setName(event.target.value)}} name="fname" placeholder="Name" className="w-full border border-solid border-black rounded-md py-2 px-3 focus:outline-none focus:border-blue-700 " required />
                             
-                            <input type="text" id="ftitle" onChange={(event)=>{setTitle(event.target.value)}} name="ftitle" placeholder="Title" className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700 " required />
+                            <input type="text" id="ftitle" onChange={(event)=>{setTitle(event.target.value)}} name="ftitle" placeholder="Title" className="w-full border border-solid border-black rounded-md py-2 px-3 focus:outline-none focus:border-blue-700 " required />
 
-                            <select name="form_selection" id="form_selection" className="rounded-xl border-gray-300" onChange={handleSelection}>
+                            <select name="form_selection" id="form_selection" className="border-solid border-black rounded-xl border-gray-300" onChange={handleSelection}>
                                 <option value="stories">Story</option>
                                 <option value="treatments">Treatment</option>
                             </select>
 
                             <div className="md:col-span-2">
-                                <textarea id="message" name="message" onChange={(event)=>{setDescription(event.target.value)}} rows="5" cols="" placeholder="Your Story" className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700" required></textarea>
+                                <textarea id="message" name="message" onChange={(event)=>{setDescription(event.target.value)}} rows="5" cols="" placeholder="Your Story" className="w-full border border-solid border-black rounded-md py-2 px-3 focus:outline-none focus:border-blue-700" required></textarea>
                             </div>
 
                             <input type="url" id="links" onChange={(event)=>setLink(event.target.value)} name="links" placeholder="Insert Link" className="hidden flex flex-grow"/>

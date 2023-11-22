@@ -7,55 +7,36 @@ const conditions = [
         "id": 1,
         "name": "Retinitis Pigmentosa",
         "description": "Watch the videos for more context",
-        "sections": [
-            {
-                "id": 1,
-                "description": "Section 1",
-            },
-            {
-                "id": 2,
-                "description": "Section 2",
-            },
-            {
-                "id": 3,
-                "description": "Section 3",
-            },
-            {
-                "id": 4,
-                "description": "Section 4",
-            }
-
-        ],
         "links": [
             {
-                "title": "Video 1",
+                "title": "Genetics, Pathophysiology, Signs",
                 "link": "https://www.youtube.com/embed/o0__ZphE3mM",
-                "source": "Youtube Channel 1"
+                "source": "JJ Medicine"
             },
             {
-                "title": "Video 2",
+                "title": "Living with retinitis pigmentosa",
                 "link": "https://www.youtube.com/embed/DW1X2z0_vN0",
-                "source": "Youtube Channel 2"
+                "source": "Guide Dogs"
             },
             {
-                "title": "Video 3",
+                "title": "MasterClass by Prof Ian McDonald",
                 "link": "https://www.youtube.com/embed/8QTMA9Y9WUo",
-                "source": "Youtube Channel 3"
+                "source": "iFocus Online"
             },
             {
-                "title": "Video 4",
+                "title": "Symptoms, Causes And Treatment",
                 "link": "https://www.youtube.com/embed/TIMOx-Dup2s",
-                "source": "Youtube Channel 4"
+                "source": "pOwer of knOwledge"
             },
             {
-                "title": "Video 5",
+                "title": "The Past, Present, and Future",
                 "link": "https://www.youtube.com/embed/LXbwBI8fuC4",
-                "source": "Youtube Channel 5"
+                "source": "Cybersight"
             },
             {
-                "title": "Video 6",
+                "title": "Genetic Factors of Eye Disease",
                 "link": "https://www.youtube.com/embed/veSC_MqnrqM",
-                "source": "Youtube Channel 6"
+                "source": "Cyagen"
             }
         ]
     },
@@ -63,50 +44,31 @@ const conditions = [
         "id": 2,
         "name": "Glaucoma",
         "description": "Watch the videos for more context",
-        "sections": [
-            {
-                "id": 1,
-                "description": "Section 1",
-            },
-            {
-                "id": 2,
-                "description": "Section 2",
-            },
-            {
-                "id": 3,
-                "description": "Section 3",
-            },
-            {
-                "id": 4,
-                "description": "Section 4",
-            }
-
-        ],
         "links": [
             {
-                "title": "Video 1",
+                "title": "What is Glaucoma",
                 "link": "https://www.youtube.com/embed/40eE6LY3Ss0",
-                "source": "Youtube Channel 1"
+                "source": "Doctor Eye Health"
             },
             {
-                "title": "Video 2",
+                "title": "Why It Happens",
                 "link": "https://www.youtube.com/embed/hz7MKn3Gwig",
-                "source": "Youtube Channel 2"
+                "source": "Fauquier ENT"
             },
             {
-                "title": "Video 3",
+                "title": "Glaucoma Animation",
                 "link": "https://www.youtube.com/embed/XlI_JXYMzbs",
-                "source": "Youtube Channel 3"
+                "source": "National Eye Institute, NIH"
             },
             {
-                "title": "Video 4",
+                "title": "Development of Glaucoma",
                 "link": "https://www.youtube.com/embed/TgjdPgSxeYg",
-                "source": "Youtube Channel 4"
+                "source": "Alila Medical Media"
             },
             {
-                "title": "Video 5",
+                "title": "Understanding Acute Angle Closure Glaucoma",
                 "link": "https://www.youtube.com/embed/wHKo0CPtaMY",
-                "source": "Youtube Channel 5"
+                "source": "Zero to Finals"
             }
         ]
     },
@@ -114,51 +76,31 @@ const conditions = [
         "id": 3,
         "name": "Macular Degeneration",
         "description": "Watch the videos for more context",
-        
-        "sections": [
-            {
-                "id": 1,
-                "description": "Section 1",
-            },
-            {
-                "id": 2,
-                "description": "Section 2",
-            },
-            {
-                "id": 3,
-                "description": "Section 3",
-            },
-            {
-                "id": 4,
-                "description": "Section 4",
-            }
-
-        ],
         "links": [
             {
-                "title": "Video 1",
+                "title": "Symptoms, Diagnosis, Treatment",
                 "link": "https://www.youtube.com/embed/OqjPxHiSJbs",
-                "source": "Youtube Channel 1"
+                "source": "JJ Medicine"
             },
             {
-                "title": "Video 2",
+                "title": "How It Affects Your Vision",
                 "link": "https://www.youtube.com/embed/ozZQIZ_52YY",
-                "source": "Youtube Channel 2"
+                "source": "Amerra Medical"
             },
             {
-                "title": "Video 3",
+                "title": "How to Prevent NATURALLY",
                 "link": "https://www.youtube.com/embed/spDSiMT4d8s",
-                "source": "Youtube Channel 3"
+                "source": "Eye Channel by Eye Surgeon Dr Audrey Tai"
             },
             {
-                "title": "Video 4",
+                "title": "Dry Macular Degeneration",
                 "link": "https://www.youtube.com/embed/gqlVTnDFeoA",
-                "source": "Youtube Channel 4"
+                "source": "Wills Eye Hospital"
             },
             {
-                "title": "Video 5",
+                "title": "Living with Macular Degeneration",
                 "link": "https://www.youtube.com/embed/juP03eLzi38",
-                "source": "Youtube Channel 5"
+                "source": "American Macular Degeneration Foundation"
             }
         ]
     },
@@ -166,50 +108,31 @@ const conditions = [
         "id": 4,
         "name": "Diabetic Retinopathy",
         "description": "Watch the videos for more context",
-        "sections": [
-            {
-                "id": 1,
-                "description": "Section 1",
-            },
-            {
-                "id": 2,
-                "description": "Section 2",
-            },
-            {
-                "id": 3,
-                "description": "Section 3",
-            },
-            {
-                "id": 4,
-                "description": "Section 4",
-            }
-
-        ],
         "links": [
             {
-                "title": "Video 1",
+                "title": "Diabetic and Hypertensive",
                 "link": "https://www.youtube.com/embed/WHwGegMfiHU",
-                "source": "Youtube Channel 1"
+                "source": "Alila Medical Media"
             },
             {
-                "title": "Video 2",
+                "title": "Diabetic Retinopathy",
                 "link": "https://www.youtube.com/embed/Tv7-2r8Ki1U",
-                "source": "Youtube Channel 2"
+                "source": "Mark Erickson"
             },
             {
-                "title": "Video 3",
+                "title": "Vision Loss",
                 "link": "https://www.youtube.com/embed/oTXv-VKMQm0",
-                "source": "Youtube Channel 3"
+                "source": "American Academy of Ophthalmology"
             },
             {
-                "title": "Video 4",
+                "title": "Lecture and Treatment",
                 "link": "https://www.youtube.com/embed/s8Lgh9ZNQCQ",
-                "source": "Youtube Channel 4"
+                "source": "Doctor Eye Health"
             },
             {
-                "title": "Video 5",
+                "title": "Diabetic retinopathy treatment",
                 "link": "https://www.youtube.com/embed/y6M1_18fE1Q",
-                "source": "Youtube Channel 5"
+                "source": "Ohio State Wexner Medical Center"
             }
         ]
     }
@@ -245,16 +168,16 @@ const Learn = () => {
                     {conditions.map((condition, index) => (
 
                         <div className="border-4 bg-neutral-400 text-white border-2 border-black rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black">
-                            <h2 className="mb-5 text-3xl font-semibold">{condition.name}</h2>
-                            <p>{condition.description}</p>
+                            <h2 className="mb-5 text-3xl font-semibold text-black">{condition.name}</h2>
+                            <p className="text-black">{condition.description}</p>
                             <hr className={hrClass} />
 
                             <div id={`list_${index}`} className="flex flex-col md:space-x-4 md:flex-row hidden flex-col md:overflow-x-scroll overflow-y-scroll scrollbar-hide py-4 my-4">
                                 {condition.links.map((link) => (
-                                    <div className="py-4 flex flex-col justify-center">
+                                    <div className="py-4 px-4 flex flex-col justify-center">
                                         <iframe src={link.link} frameborder="0" allowFullScreen className="aspect-video"></iframe>
-                                        <p className="font-mono font-bold mt-2">Title: {link.title}</p>
-                                        <p className="font-mono font-bold">Source: {link.source}</p>
+                                        <p className="font-mono font-bold mt-2 text-lg text-black">Title: {link.title}</p>
+                                        <p className="font-mono font-bold text-lg text-black">Source: {link.source}</p>
                                     </div>
                                 ))}
                             </div>
