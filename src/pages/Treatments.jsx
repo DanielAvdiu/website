@@ -11,6 +11,7 @@ const Treatments = () => {
     const handleClick = (event, link) => {
         event.preventDefault();
         console.log("clicked");
+        console.log(link);
         window.open(link);
     };
 

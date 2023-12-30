@@ -70,6 +70,10 @@ const Form = () => {
 
                 createStory(name, title, description);
 
+                document.getElementById("fname").value = "";
+                document.getElementById("message").value = "";
+                document.getElementById("ftitle").value = "";
+
                 alert("Thank you for contributing!")
 
                 setName("");
@@ -90,6 +94,11 @@ const Form = () => {
                 console.log("Title: " + title);
 
                 createTreatment(name, title, description, link);
+
+                document.getElementById("fname").value = "";
+                document.getElementById("message").value = "";
+                document.getElementById("ftitle").value = "";
+                document.getElementById("links").value = "";
 
                 alert("Thank you for contributing!")
 
@@ -124,7 +133,7 @@ const Form = () => {
         }
     }, [name, description, link, title]);
 
-    
+
     useEffect(() => {
         if (choice == "stories") {
             if (name === "" && description === "" && title === "") {
